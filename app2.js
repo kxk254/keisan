@@ -16,3 +16,18 @@ console.log(snsUser.id); // 1
 snsUser.like();        // Taro liked post #10
 snsUser.post("Hello!");  // Taro posted: "Hello!"
 
+console.log(Math.PI);
+
+console.log(window.innerWidth);
+
+console.log(window.innerHeight);
+
+window.document.querySelector("#pokemon").innerText = "ポケモンゲット";
+
+window.document.querySelector("#pokemon").style.backgroundColor = "#aaa";
+
+setTimeout(function(){
+	alert("HELLO HOW ARE YOU?");
+},5000);
+
+
