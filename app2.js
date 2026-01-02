@@ -27,7 +27,22 @@ window.document.querySelector("#pokemon").innerText = "ポケモンゲット";
 window.document.querySelector("#pokemon").style.backgroundColor = "#aaa";
 
 setTimeout(function(){
-	alert("HELLO HOW ARE YOU?");
+	//alert("HELLO HOW ARE YOU?");
 },5000);
 
 
+//window.addEventListener("resize", function(){
+//	alert("load completed");
+//});
+
+document.querySelector("#button").addEventListener("click", function(){
+	console.log("clicked###");
+});
+
+
+const $post = document.createElement("article");
+$post.setAttribute("class", "post");
+$post.innerText = "お腹減ったなう";
+
+const $timeline = document.querySelectorAll(".timeline")[0];
+$timeline.appendChild($post);
