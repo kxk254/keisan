@@ -70,7 +70,14 @@ function getSeason() {
 	}
 }
 
-season = getSeason();
+const season = getSeason();
 console.log(season);
 
+const bars = 1;
+function fooa() {
+	const bar = 2;
+	console.log(bar);
+}
+console.log("global"+bars);
+fooa();
 
