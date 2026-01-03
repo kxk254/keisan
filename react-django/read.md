@@ -1,3 +1,9 @@
+### VENV
+python3 -m venv env
+
+source env/bin/activate
+
+## Django
 pip install django
 pip install djangorestframework
 
