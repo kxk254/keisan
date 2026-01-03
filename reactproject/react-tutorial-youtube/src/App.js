@@ -13,7 +13,11 @@ function App() {
 
   const handleAddTodo = () => {
     // ここに新しいタスクを追加する処理を書く
-    console.log(todoNameRef);
+    const name = todoNameRef.current.value;
+    setTodos((prevTodos) => {
+      return [...prevTodos, {id: "1", name: name, completed: false}];
+    });
+    todoNameRef.current.value = null;
   };
 
   return (
