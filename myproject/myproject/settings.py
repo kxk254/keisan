@@ -58,6 +58,9 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+# Allow all domains (you might want to restrict this in production)
+CORS_ALLOW_ALL_ORIGINS = True
+
 ROOT_URLCONF = 'myproject.urls'
 
 TEMPLATES = [
